@@ -14,7 +14,8 @@
 
 int main(void)
 {
-      // Allocate 11 domains with room for up to 3*10
+   using namespace std ;	
+   // Allocate 11 domains with room for up to 3*10
    static int dom[11] = {30,30,30,30,30,30,30,30,30,30,30};
    
    bdd_init(10000,10000);

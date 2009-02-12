@@ -28,7 +28,7 @@
 ========================================================================*/
 
 /*************************************************************************
-  $Header: /home/jln/phd/bdd/src/RCS/reorder.c,v 1.13.1.5 2000/05/31 19:11:43 jln Exp jln $
+  $Header: /cvsroot/buddy/buddy/src/reorder.c,v 1.1.1.1 2004/06/25 13:22:59 haimcohen Exp $
   FILE:  reorder.c
   DESCR: BDD reordering functions
   AUTH:  Jorn Lind

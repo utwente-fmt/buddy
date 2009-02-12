@@ -28,7 +28,7 @@
 ========================================================================*/
 
 /*************************************************************************
-  $Header: /home/jln/phd/bdd/src/RCS/fdd.h,v 1.1 2000/05/17 20:00:05 jln Exp jln $
+  $Header: /cvsroot/buddy/buddy/src/fdd.h,v 1.1.1.1 2004/06/25 13:22:40 haimcohen Exp $
   FILE:  fdd.h
   DESCR: Finite domain data with BDDs
   AUTH:  Jorn Lind

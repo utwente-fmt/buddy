@@ -28,7 +28,7 @@
 ========================================================================*/
 
 /*************************************************************************
-  $Header: /home/jln/phd/bdd/src/RCS/bddtree.h,v 1.1 2000/05/17 20:00:05 jln Exp jln $
+  $Header: /cvsroot/buddy/buddy/src/bddtree.h,v 1.1.1.1 2004/06/25 13:22:26 haimcohen Exp $
   FILE:  tree.h
   DESCR: Trees for BDD variables
   AUTH:  Jorn Lind

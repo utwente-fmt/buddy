@@ -28,7 +28,7 @@
 ========================================================================*/
 
 /*************************************************************************
-  $Header: /home/jln/phd/bdd/src/RCS/bddio.c,v 1.5 2000/05/31 19:11:43 jln Exp jln $
+  $Header: /cvsroot/buddy/buddy/src/bddio.c,v 1.1.1.1 2004/06/25 13:22:14 haimcohen Exp $
   FILE:  bddio.c
   DESCR: File I/O routines for BDD package
   AUTH:  Jorn Lind

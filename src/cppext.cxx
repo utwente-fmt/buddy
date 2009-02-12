@@ -28,7 +28,7 @@
 ========================================================================*/
 
 /*************************************************************************
-  $Header: /home/jln/phd/bdd/src/RCS/cppext.cxx,v 1.3 2000/05/17 20:00:05 jln Exp jln $
+  $Header: /cvsroot/buddy/buddy/src/cppext.cxx,v 1.1.1.1 2004/06/25 13:22:39 haimcohen Exp $
   FILE:  cppext.cxx
   DESCR: C++ extension of BDD package
   AUTH:  Jorn Lind

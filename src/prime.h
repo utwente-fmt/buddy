@@ -28,7 +28,7 @@
 ========================================================================*/
 
 /*************************************************************************
-  $Header$
+  $Header: /cvsroot/buddy/buddy/src/prime.h,v 1.1.1.1 2004/06/25 13:22:53 haimcohen Exp $
   FILE:  prime.c
   DESCR: Prime number calculations
   AUTH:  Jorn Lind

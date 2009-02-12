@@ -28,7 +28,7 @@
 ========================================================================*/
 
 /*************************************************************************
-  $Header: /home/jln/phd/bdd/src/RCS/kernel.h,v 1.16 2000/06/14 21:37:12 jln Exp jln $
+  $Header: /cvsroot/buddy/buddy/src/kernel.h,v 1.2 2004/07/13 20:51:49 haimcohen Exp $
   FILE:  kernel.h
   DESCR: Kernel specific definitions for BDD package
   AUTH:  Jorn Lind
@@ -92,7 +92,7 @@ typedef struct s_BddNode /* Node table entry */
 #ifdef CPLUSPLUS
 extern "C" {
 #endif
-   
+
 extern int       bddrunning;         /* Flag - package initialized */
 extern int       bdderrorcond;       /* Some error condition was met */
 extern int       bddnodesize;        /* Number of allocated nodes */
@@ -108,15 +108,13 @@ extern jmp_buf   bddexception;
 extern int       bddreorderdisabled;
 extern int       bddresized;
 extern bddCacheStat bddcachestats;
-   
+
 #ifdef CPLUSPLUS
 }
 #endif
-   
+
 
 /*=== KERNEL DEFINITIONS ===============================================*/
-
-#define VERSION 22
 
 #define MAXVAR 0x1FFFFF
 #define MAXREF 0x3FF
@@ -167,7 +165,12 @@ extern bddCacheStat bddcachestats;
 #define BDDZERO 0
 
 #ifndef CLOCKS_PER_SEC
-#define CLOCKS_PER_SEC DEFAULT_CLOCK
+  /* Pass `CPPFLAGS=-DDEFAULT_CLOCK=1000' as an argument to ./configure
+     to override this setting.  */
+# ifndef DEFAULT_CLOCK
+#  define DEFAULT_CLOCK 60
+# endif
+# define CLOCKS_PER_SEC DEFAULT_CLOCK
 #endif
 
 #define DEFAULTMAXNODEINC 50000
@@ -182,7 +185,7 @@ extern bddCacheStat bddcachestats;
 #ifdef CPLUSPLUS
 extern "C" {
 #endif
-   
+
 extern int    bdd_error(int);
 extern int    bdd_makenode(unsigned int, int, int);
 extern int    bdd_noderesize(int);

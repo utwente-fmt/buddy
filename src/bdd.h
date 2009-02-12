@@ -28,7 +28,7 @@
 ========================================================================*/
 
 /*************************************************************************
-  $Header: /home/jln/phd/bdd/src/RCS/bdd.h,v 1.17 2000/07/03 19:48:49 jln Exp jln $
+  $Header: /cvsroot/buddy/buddy/src/bdd.h,v 1.1.1.1 2004/06/25 13:22:09 haimcohen Exp $
   FILE:  bdd.h
   DESCR: C,C++ User interface for the BDD package
   AUTH:  Jorn Lind

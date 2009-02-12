@@ -6,7 +6,6 @@
 *************************************************************************/
 #include <stdlib.h>
 #include <string.h>
-#include <time.h>
 #include "bdd.h"
 
 int N;
@@ -45,6 +44,7 @@ void build_adder(void)
 
 int main(int argc, char **argv)
 {
+   using namespace std ;
    int method=BDD_REORDER_NONE;
    int n;
    
@@ -88,8 +88,6 @@ int main(int argc, char **argv)
 	 method = BDD_REORDER_RANDOM;
    }
    
-   long c0 = clock();
-   
    bdd_init(500,1000);
    bdd_setvarnum(2*N);
       
@@ -128,21 +126,15 @@ int main(int argc, char **argv)
       for (n=0 ; n<N ; n++)
 	 cout << "Out[" << n << "]: " << bdd_nodecount(xout[n]) << " nodes\n";
 
-      long c1 = clock();
-      cout << (float)(c1-c0)/(float)(CLOCKS_PER_SEC) << " sec.\n";
-      
       bdd_reorder(method);
       cout << "Sizes after reordering:\n";
    }
    else
       cout << "Sizes:\n";
 
-   long c1 = clock();
-   
    for (n=0 ; n<N ; n++)
       cout << "Out[" << n << "]: " << bdd_nodecount(xout[n]) << " nodes\n";
    
-   cout << (float)(c1-c0)/(float)(CLOCKS_PER_SEC) << " sec.\n";
 }
 
 

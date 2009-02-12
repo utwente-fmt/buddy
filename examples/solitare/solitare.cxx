@@ -1,5 +1,4 @@
 #include <math.h>
-#include <time.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include "bdd.h"
@@ -117,6 +116,7 @@ bdd make_move(int src, int tmp, int dst)
 
 void make_transition_relation(void)
 {
+   using namespace std ;
    T = bddfalse;
    
    for (int n=0 ; moves[n][0]!=moves[n][1] ; n++)
@@ -156,9 +156,9 @@ void iterate(void)
       next = bdd_replace(next, pair);
       reachable |= next;
 
-      cout << cou << ": " << bdd_nodecount(reachable)
+      std::cout << cou << ": " << bdd_nodecount(reachable)
 	   << " nodes, " << bdd_satcount(reachable)/dummyStateNum
-	   << " states\n" << flush;
+	   << " states\n" << std::endl ;
       cou++;
    }
    while (tmp != reachable);
@@ -182,10 +182,10 @@ void iterate_front(void)
       front = next - reachable;
       reachable |= front;
 
-      cout << cou << ": " << bdd_nodecount(reachable)
-	   << " , " << bdd_satcount(reachable)/dummyStateNum << endl;
-      cout << cou << ": " << bdd_nodecount(front)
-	   << " , " << bdd_satcount(front)/dummyStateNum << endl;
+      std::cout << cou << ": " << bdd_nodecount(reachable)
+	   << " , " << bdd_satcount(reachable)/dummyStateNum << std::endl;
+      std::cout << cou << ": " << bdd_nodecount(front)
+	   << " , " << bdd_satcount(front)/dummyStateNum << std::endl;
       cou++;
    }
    while (tmp != reachable);
@@ -208,15 +208,9 @@ void setup(void)
 
 int main(void)
 {
-   long c1, c2;
-
-   c1 = clock();
-
    setup();
    iterate();
 
-   c2 = clock();
-   printf("Time: %.1f sec.\n", ((float)(c2-c1))/CLOCKS_PER_SEC);
    system("ps aux | grep \"./solitare\" | grep -v \"grep\"");
 }
 

@@ -74,6 +74,7 @@ void build(int i, int j)
 
 int main(int ac, char **av)
 {
+   using namespace std ;
    int n,i,j;
    
    if (ac != 2)

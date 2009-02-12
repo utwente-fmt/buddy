@@ -28,7 +28,7 @@
 ========================================================================*/
 
 /*************************************************************************
-  $Header: /home/jln/phd/bdd/src/RCS/fdd.c,v 1.7 2000/05/17 20:00:05 jln Exp jln $
+  $Header: /cvsroot/buddy/buddy/src/fdd.c,v 1.1.1.1 2004/06/25 13:22:40 haimcohen Exp $
   FILE:  fdd.c
   DESCR: Finite domain extensions to BDD package
   AUTH:  Jorn Lind

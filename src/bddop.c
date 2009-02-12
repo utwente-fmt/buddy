@@ -28,7 +28,7 @@
 ========================================================================*/
 
 /*************************************************************************
-  $Header: /home/jln/phd/bdd/src/RCS/bddop.c,v 1.29 2000/07/03 19:48:49 jln Exp jln $
+  $Header: /cvsroot/buddy/buddy/src/bddop.c,v 1.1.1.1 2004/06/25 13:22:22 haimcohen Exp $
   FILE:  bddop.c
   DESCR: BDD operators
   AUTH:  Jorn Lind

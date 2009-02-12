@@ -28,7 +28,7 @@
 ========================================================================*/
 
 /*************************************************************************
-  $Header: /home/jln/phd/bdd/src/RCS/cache.h,v 1.8 2000/05/17 20:00:05 jln Exp jln $
+  $Header: /cvsroot/buddy/buddy/src/cache.h,v 1.1.1.1 2004/06/25 13:22:34 haimcohen Exp $
   FILE:  cache.h
   DESCR: Cache class for caching apply/exist etc. results
   AUTH:  Jorn Lind

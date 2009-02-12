@@ -28,7 +28,7 @@
 ========================================================================*/
 
 /*************************************************************************
-  $Header: /home/jln/phd/bdd/src/RCS/prime.c,v 1.2 2001/02/28 19:40:00 jln Exp jln $
+  $Header: /cvsroot/buddy/buddy/src/prime.c,v 1.1.1.1 2004/06/25 13:22:51 haimcohen Exp $
   FILE:  prime.c
   DESCR: Prime number calculations
   AUTH:  Jorn Lind
