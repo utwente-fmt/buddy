@@ -25,6 +25,7 @@ libbdd_la_SOURCES = \
 # See the `Updating version info' node of the Libtool manual before
 # changing this.
 libbdd_la_LDFLAGS = -version-info 0:0:0
+libbdd_la_LIBADD = -lm
 
 check_PROGRAMS = bddtest
 bddtest_SOURCES = bddtest.cxx
