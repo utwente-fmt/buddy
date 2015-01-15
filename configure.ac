@@ -12,7 +12,12 @@ AC_DEFINE_UNQUOTED([MINOR_VERSION], [$MINOR_VERSION], [BuDDy's minor version.])
 AC_PROG_CC
 
 AM_PROG_LEX
-AC_PROG_YACC
+
+AC_CHECK_PROGS(YACC,byacc yacc 'bison -y',[${am_missing_run} yacc])
+
+if test x"$YACC" != x"yacc" ; then
+    AC_MSG_ERROR([bison/yacc not found, please install before continuing.])
+fi
 
 AC_PROG_CXX
 

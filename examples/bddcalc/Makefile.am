@@ -24,3 +24,5 @@ bddcalc_SOURCES = \
  parser.yxx \
  parser_.h \
  slist.h
+
+CLEANFILES = lexer.cxx parser.cxx
