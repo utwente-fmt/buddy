@@ -2,7 +2,6 @@ EXTRA_DIST = runregression
 
 SUBDIRS = \
  adder \
- bddcalc \
  bddtest \
  cmilner \
  fdd \
