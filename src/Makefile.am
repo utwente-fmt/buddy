@@ -30,3 +30,17 @@ libbdd_la_LIBADD = -lm
 check_PROGRAMS = bddtest
 bddtest_SOURCES = bddtest.cxx
 bddtest_LDADD = ./libbdd.la
+
+EXTRA_DIST = $(srcdir)/libbdd.pc.in
+pkgconfigdir = $(libdir)/pkgconfig
+nodist_pkgconfig_DATA = libbdd.pc
+
+libbdd.pc: $(srcdir)/libbdd.pc.in Makefile
+	sed -e 's![@]prefix[@]!$(prefix)!g' \
+	    -e 's![@]exec_prefix[@]!$(exec_prefix)!g' \
+	    -e 's![@]includedir[@]!$(includedir)!g' \
+	    -e 's![@]libdir[@]!$(libdir)!g' \
+	    -e 's![@]PACKAGE_VERSION[@]!$(PACKAGE_VERSION)!g' \
+	$(srcdir)/libbdd.pc.in >$@.tmp && mv $@.tmp $@
+
+CLEANFILES = libbdd.pc
