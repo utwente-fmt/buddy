@@ -56,6 +56,15 @@ UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 
 ## Installing
 
+The following commands should be used to create the _configure_ and _make_ files
+for installation with _LibToolize_, _aclocal_ and _AutoMake_.
+
+```bash
+libtoolize
+aclocal
+autoheader && autoconf && automake
+```
+
 The following commands should then build and install the library.
 
 ```bash
